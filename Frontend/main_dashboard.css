@@ -1,0 +1,247 @@
+.topbar {
+    background-color: #1a237e; /* Dark blue */
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.top-contact {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-contact li {
+    color: #fff;
+}
+
+.top-contact a {
+    color: #ffcc00; /* Gold */
+    text-decoration: none;
+}
+
+.top-contact a:hover {
+    text-decoration: underline;
+}
+
+.logout-btn {
+    background: #d54d4d; /* Red color for logout */
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background: #b71c1c; /* Darker red */
+}
+
+/* Hero Section Styles */
+.dashboard-hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0; /* Adjust height */
+    color: white;
+    text-align: center;
+}
+
+/* Slogan Styling */
+.dashboard-slogan {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Subtle Shadow for Visibility */
+    color: #ffffff;
+}
+
+
+/* Hero Text */
+.hero-text {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+/* Headline Styling */
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Highlighted Color */
+}
+
+/* Subtitle */
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Greeting Box */
+.greeting-box {
+    width: 80%;  /* Covers more page width */
+    max-width: 900px;  /* Balanced width */
+    margin: 20px auto;  /* Center the box */
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);  /* Background blur effect */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Username */
+.greeting-box h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;  
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 8px;  /* ⬅ Added spacing below Username */
+}
+
+/* Full Name */
+.greeting-box h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #444;  
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 12px;  /* ⬅ Increased spacing below Full Name */
+}
+
+/* Motivational Line */
+.greeting-box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;  
+    font-family: 'Poppins', sans-serif;
+    margin-top: 12px; /* ⬅ Space before motivational text */
+}
+
+#displayUsername{
+    color: #ef4444;
+}
+
+/* Financial Summary Section */
+.financial-summary {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.financial-summary h2 {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Summary Container - Align Boxes in One Row */
+.summary-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Individual Summary Box */
+.summary-box {
+    width: 250px; /* Fixed width for uniformity */
+    height: 180px; /* Fixed height to keep all boxes same */
+    background: linear-gradient(135deg, #3f51b5, #1a237e); /* Matching Website Theme */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Even spacing inside the box */
+}
+
+.summary-box:hover {
+    transform: scale(1.05);
+}
+
+.summary-box h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.summary-box .amount {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00; /* Gold for visibility */
+}
+
+.summary-box .details {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+/* Add Button */
+.add-btn {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    align-self: center; /* Centers the button */
+}
+
+.add-btn:hover {
+    background: #ffcc00;
+    color: #1a237e;
+}
+
+/* GIF Section Styling */
+.gif-graph-section {
+    text-align: center;
+    padding: 30px 0;
+    background: #f9f9f9; /* Light background to keep contrast */
+}
+
+.gif-graph-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centering the GIF */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;  /* Adjust width based on your preference */
+    margin: 0 auto;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Slightly rounded edges for a smooth look */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Investment Details Styling */
+#investmentTypes {
+    font-weight: bold;
+    color: #ffcc00; /* Highlight investment types */
+}
+

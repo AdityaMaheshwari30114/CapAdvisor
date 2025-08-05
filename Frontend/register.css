@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 Background */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3f51b5, #1a237e);
+}
+
+/* 🔹 Top Heading */
+.top-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.top-heading img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Signup Box */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4); /* 🔥 Increased Blur */
+
+
+
+}
+
+
+
+/* 🔹 Form Elements */
+h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #3f51b5;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 12px;
+    color: #666;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group select:focus ~ label {
+    top: 2px;
+    left: 8px;
+    font-size: 10px;
+    color: #3f51b5;
+    background: white;
+    padding: 0 4px;
+}
+
+/* 🔹 Terms */
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* 🔹 Signup Button */
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #3f51b5, #1a237e);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1a237e, #3f51b5);
+}
+
+/* ✅ Success Message */
+.success-message {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+/* ❌ Error Message */
+.error-message {
+    color: #D1242F;
+    font-size: 12px;
+    margin-top: 3px;
+    display: block;
+    text-align: left;
+}
+
+/* ✅ Highlight valid input fields in green */
+.valid-border {
+    border: 2px solid green !important;
+}
+
+/* ❌ Highlight invalid input fields in red */
+.error-border {
+    border: 2px solid red !important;
+}
+
+/* 🔹 Mobile Optimization */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3f51b5, #1a237e);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* 🔥 Increased size */
+}
+
+/* Login Card */
+.login-card {
+    background: white;
+    padding: 40px; /* 🔥 Increased padding for bigger size */
+    border-radius: 12px;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.4); /* 🔥 Black shadow effect */
+    text-align: center;
+    width: 450px; /* 🔥 Increased width */
+    box-sizing: border-box;
+}
+
+/* 🔄 Loading Spinner */
+.spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide the forgot password section initially */
+#forgotPasswordSection {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+#forgotPasswordSection input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#forgotPasswordSection button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendResetEmail {
+    background: #3f51b5;
+    color: white;
+}
+
+#sendResetEmail:hover {
+    background: #1a237e;
+}
+
+#forgotPasswordMessage {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* Heading */
+h2 {
+    color: #3f51b5;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Subheading */
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 12px;
+    color: #666;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: 2px;
+    left: 8px;
+    font-size: 10px;
+    color: #3f51b5;
+    background: white;
+    padding: 0 4px;
+}
+
+/* Forgot Password */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #3f51b5;
+    transition: 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #1a237e;
+}
+
+/* Buttons */
+.login-btn, .google-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: #3f51b5;
+    color: white;
+}
+
+.login-btn:hover {
+    background: #1a237e;
+}
+
+/* Divider */
+.divider {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Google Login Button */
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #444;
+    border: 1px solid #ddd;
+}
+
+.google-login img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Signup Link */
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #3f51b5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signup-link a:hover {
+    color: #1a237e;
+}
+
+/* ✅ Error Messages */
+.error-message {
+    color: #D1242F;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 3px;
+    text-align: left;
+    display: block;
+}
+
+/* 🔥 Error Border */
+.error-border {
+    border: 2px solid red !important;
+}
+
+/* ✅ Valid Input Border */
+.valid-border {
+    border: 2px solid green !important;
+}

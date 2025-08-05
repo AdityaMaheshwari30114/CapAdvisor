@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | CapAdvisor</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Welcome Back!</h2>
+      <p>Log in to continue your journey with CapAdvisor.</p>
+
+      <!-- Login Form -->
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="email" id="email" required>
+          <label for="email">Email Address <sup class="sup">*</sup></label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" required>
+          <label for="password">Password <sup class="sup">*</sup></label>
+        </div>
+
+        <div class="forgot-password">
+          <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <div class="divider">or</div>
+
+        <!-- 🔹 NEW: Google button wired up in login.js -->
+        <button type="button" id="googleLoginBtn" class="google-login">
+          <img src="google-logo.png" alt="Google"> Login with Google
+        </button>
+
+        <p class="signup-link">New here? <a href="register.html">Sign Up</a></p>
+      </form>
+
+      <!-- Forgot Password Section (Initially Hidden) -->
+      <div id="forgotPasswordSection" class="hidden">
+        <h3>Reset Password</h3>
+        <p>Enter your registered email to receive a reset link.</p>
+        <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+        <p id="forgotPasswordMessage" class="message"></p>
+        <button id="sendResetEmail">Send</button>
+        <button id="backToLogin">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+  <!-- Config + Logic -->
+  <script src="firebase-config.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

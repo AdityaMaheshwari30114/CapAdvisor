@@ -1,0 +1,80 @@
+.topbar {
+    background-color: #1a237e; /* Dark blue */
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.top-contact {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-contact li {
+    color: #fff;
+}
+
+.top-contact a {
+    color: #ffcc00; /* Gold */
+    text-decoration: none;
+}
+
+.top-contact a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0; /* Adjust height */
+    color: white;
+    text-align: center;
+}
+
+/* Slogan Styling */
+.dashboard-slogan {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Subtle Shadow for Visibility */
+    color: #ffffff;
+}
+
+
+/* Hero Text */
+.hero-text {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+/* Headline Styling */
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Highlighted Color */
+}
+
+/* Subtitle */
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Greeting Box */
+.greeting-box {
+    width: 80%;  /* Covers more page width */
+    max-width: 900px;  /* Balanced width */
+    margin: 20px auto;  /* Center the box */
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);  /* Background blur effect */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}

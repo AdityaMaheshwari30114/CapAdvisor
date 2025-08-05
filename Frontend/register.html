@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapAdvisor | Sign Up</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- CapAdvisor Heading -->
+    <div class="top-heading">
+        <p><b>Create your free account on CapAdvisor</b></p>
+    </div>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="input-group">
+                <input type="text" id="fullname" required>
+                <label for="fullname">Full Name<SUP class="sup">*</SUP></label>
+                <small class="error-message"></small>
+            </div>
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label for="username">Username<SUP class="sup">*</SUP></label>
+                <small class="error-message"></small>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" required>
+                <label for="phone">Phone Number<SUP class="sup">*</SUP></label>
+                <small class="error-message"></small>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Email<SUP class="sup">*</SUP></label>
+                <small class="error-message"></small>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password">Password<SUP class="sup">*</SUP></label>
+                <small class="error-message"></small>
+            </div>
+            <div class="input-group">
+                <select id="security-question" required>
+                    <option value="" disabled selected>Select Security Question<SUP class="sup">*</SUP></option>
+                    <option value="pet">What is your pet’s name?</option>
+                    <option value="school">What was your first school?</option>
+                </select>
+                <small class="error-message"></small>
+            </div>
+            <div class="input-group">
+                <input type="text" id="security-answer" required>
+                <label for="security-answer">Security Answer<SUP class="sup">*</SUP></label>
+                <small class="error-message"></small>
+            </div>
+            <label class="terms">
+                <input type="checkbox" id="termsCheckbox" required> I agree to CapAdvisor's terms and conditions.
+                <small class="error-message"></small>
+            </label>
+            <button type="submit" id="signupButton">Sign Up</button>
+
+            <!-- Success Message -->
+            <p id="successMessage" class="success-message"></p>
+        </form>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+    <!-- Firebase Config -->
+    <script src="firebase-config.js"></script>
+
+    <!-- Register Script -->
+    <script src="register.js"></script>
+
+</body>
+</html>

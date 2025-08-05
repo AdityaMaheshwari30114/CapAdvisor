@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard | CapAdvisor</title>
+        <link rel="icon" href="data:,">
+
+        <link rel="stylesheet" href="css/dashboard.css"> <!-- ✅ Add this line -->
+    </head>
+    
+<body>
+    <h1>Welcome to CapAdvisor Dashboard</h1>
+    <p>This is a temporary dashboard. Customize it later.</p>
+    <h2>Welcome, <span id="username">Loading...</span>!</h2>
+<p>Email: <span id="email">Loading...</span></p>
+<p>Full Name: <span id="fullname">Loading...</span></p>
+<p>Phone: <span id="phone">Loading...</span></p>
+
+<!-- Logout Button -->
+<button id="logout">Logout</button>
+
+    <button onclick="logout()">Logout</button>
+
+
+    <script>
+        function logout() {
+            firebase.auth().signOut().then(() => {
+                window.location.href = "login.html"; // Redirect to login page after logout
+            });
+        }
+    </script>
+    <!-- ✅ Firebase SDK (Use COMPAT versions) -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<!-- ✅ Firebase Config (MUST be after SDK) -->
+<script src="firebase-config.js"></script>
+
+<!-- ✅ Your Scripts -->
+<script src="dashboard.js"></script>
+
+</body>
+</html>
